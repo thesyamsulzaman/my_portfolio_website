@@ -123,7 +123,6 @@ nav {
 }
 .hero::before {
   background-image: url("./assets/img/4k-3840-x-2160-wallpapers-themefoxx (279).jpg");
-  */background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   content: "";
@@ -165,7 +164,8 @@ nav {
 .projects {
   background: #1f3044;
   height: 100vh;
-  color: #ff7;
+  color: #fff;
+}
 }
 
 /*=========*/
@@ -174,7 +174,7 @@ nav {
 .blog {
   background: #373833;
   height: 100vh;
-  color: #ff7;
+  color: #fff;
 }
 
 @media (min-width: 678px) {
