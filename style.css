@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid magenta;*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typography */
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 1.8rem;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 530;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.81rem;
+}
+
+a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/*=========*/
+/* HEADER */
+/*========*/
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+nav {
+  padding-top: 0.3em;
+  transition: 0.2s ease-in;
+}
+
+.nav__center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__item a {
+  color: #f7f7f7;
+  text-transform: uppercase;
+}
+
+.nav--scroll {
+  background: #181818;
+}
+
+.nav__item--active {
+  border-bottom: 1px solid #f7f7f7;
+  padding-bottom: 0.4em;
+}
+
+.nav__logo__img {
+  width: 170px;
+  height: 44px;
+}
+.nav__links--toggle {
+  display: none;
+}
+
+.nav__hamburger--toggle {
+  display: block;
+}
+
+/*=========*/
+/* LAYOUT */
+/*========*/
+
+.container {
+  width: 88%;
+  max-width: 900px;
+  /*border: 1px solid magenta;*/
+  margin: 0 auto;
+}
+
+.about,
+.projects,
+.blog {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/*=========*/
+/*  HERO  */
+/*========*/
+
+.hero {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.hero::before {
+  background-image: url("./assets/img/4k-3840-x-2160-wallpapers-themefoxx (279).jpg");
+  */background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+}
+
+.hero__overlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 35px;
+  color: #fff;
+}
+
+/*=========*/
+/* ABOUT  */
+/*========*/
+
+.about {
+  background: #e6e2dd;
+  height: 100vh;
+}
+
+.projects {
+  background: #1f3044;
+  height: 100vh;
+}
+.blog {
+  background: #373833;
+  height: 100vh;
+}
+
+@media (min-width: 678px) {
+  /*=========*/
+  /* HEADER */
+  /*========*/
+
+  .nav__links--toggle {
+    display: block;
+  }
+  .nav__hamburger--toggle {
+    display: none;
+  }
+  .nav__item {
+    display: inline-block;
+    margin-left: 1.1em;
+  }
+
+  /*=========*/
+  /*  HERO  */
+  /*========*/
+
+  .hero__overlay {
+    line-height: 52px;
+  }
+  .hero__title {
+    font-size: 2.8em;
+    font-weight: 200;
+  }
+  .hero__text {
+    font-size: 1.1em;
+  }
+}
