@@ -159,13 +159,22 @@ nav {
   height: 100vh;
 }
 
+/*============*/
+/* PROJECTS  */
+/*==========*/
 .projects {
   background: #1f3044;
   height: 100vh;
+  color: #ff7;
 }
+
+/*=========*/
+/*  BLOG  */
+/*========*/
 .blog {
   background: #373833;
   height: 100vh;
+  color: #ff7;
 }
 
 @media (min-width: 678px) {
