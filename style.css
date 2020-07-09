@@ -171,9 +171,19 @@ nav {
 /*  BLOG  */
 /*========*/
 .blog {
-  background: #373833;
+  background: #1f3044;
   height: 100vh;
   color: #fff;
+}
+
+/*=========*/
+/* FOOTER */
+/*========*/
+
+footer {
+  height: 20vh;
+  color: #fff;
+  background: darkpurple;
 }
 
 @media (min-width: 678px) {
