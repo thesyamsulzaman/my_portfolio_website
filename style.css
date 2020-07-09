@@ -98,7 +98,8 @@ nav {
 
 .about,
 .projects,
-.blog {
+.blog,
+footer {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -171,19 +172,28 @@ nav {
 /*  BLOG  */
 /*========*/
 .blog {
-  background: #1f3044;
+  background: #373833;
   height: 100vh;
   color: #fff;
 }
-
 /*=========*/
 /* FOOTER */
 /*========*/
 
 footer {
-  height: 20vh;
-  color: #fff;
-  background: darkpurple;
+  background-color: lightgray;
+  height: 9vh;
+  color: #000;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__icons img {
+  margin-left: 1.2em;
 }
 
 @media (min-width: 678px) {
