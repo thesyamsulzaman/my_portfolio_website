@@ -186,7 +186,7 @@ nav {
   object-position: center;
 }
 .about__container {
-  height: 67vh;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,6 +216,17 @@ nav {
 /*========*/
 .blog {
   background: #373833;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+/*=========*/
+/*  CONTACT  */
+/*========*/
+
+.contact {
+  background: #1f3044;
   height: 100vh;
   position: relative;
   color: #fff;
