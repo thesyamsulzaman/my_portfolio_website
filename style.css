@@ -8,7 +8,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Typography */
+/*=============*/
+/* TYPOGRAPHY */
+/*===========*/
 
 h1 {
   font-family: "Ubuntu", sans-serif;
@@ -16,6 +18,10 @@ h1 {
   font-weight: 800;
   letter-spacing: 3px;
   font-size: 1.8rem;
+}
+
+ul li {
+  list-style: none;
 }
 
 p {
@@ -37,7 +43,7 @@ body {
 }
 
 /*=========*/
-/* HEADER */
+/* NAVBAR */
 /*========*/
 
 header {
@@ -54,9 +60,24 @@ nav {
 }
 
 .nav__center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
+}
+
+.nav__hamburger {
+  position: absolute;
+  top: 0.5em;
+  right: 0em;
+}
+.nav__hamburger--toggle {
+  display: block;
+}
+
+.nav__logo__img {
+  width: 170px;
+  height: 44px;
+}
+
+.nav__center {
 }
 
 .nav__item a {
@@ -64,8 +85,8 @@ nav {
   text-transform: uppercase;
 }
 
-.nav--scroll {
-  background: #181818;
+.nav__item {
+  padding: 0.72em 0;
 }
 
 .nav__item--active {
@@ -73,15 +94,15 @@ nav {
   padding-bottom: 0.4em;
 }
 
-.nav__logo__img {
-  width: 170px;
-  height: 44px;
-}
-.nav__links--toggle {
-  display: none;
+.nav--scroll {
+  background: #181818;
 }
 
-.nav__hamburger--toggle {
+.nav__links {
+  display: none;
+  text-align: right;
+}
+.nav__links--toggle {
   display: block;
 }
 
@@ -94,18 +115,6 @@ nav {
   max-width: 900px;
   /*border: 1px solid magenta;*/
   margin: 0 auto;
-}
-
-.about,
-.projects,
-.blog,
-footer {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
 
 /*=========*/
@@ -156,6 +165,7 @@ footer {
 
 .about {
   background: #e6e2dd;
+  position: relative;
   height: 100vh;
 }
 
@@ -165,6 +175,7 @@ footer {
 .projects {
   background: #1f3044;
   height: 100vh;
+  position: relative;
   color: #fff;
 }
 
@@ -174,16 +185,22 @@ footer {
 .blog {
   background: #373833;
   height: 100vh;
+  position: relative;
   color: #fff;
 }
+
 /*=========*/
 /* FOOTER */
 /*========*/
 
 footer {
   background-color: #f7f7f7;
-  height: 8vh;
+  height: auto;
   color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer .container {
@@ -196,9 +213,9 @@ footer .container {
   margin-left: 1.2em;
 }
 
-@media (min-width: 678px) {
+@media (min-width: 768px) {
   /*=========*/
-  /* HEADER */
+  /* NAVBAR */
   /*========*/
 
   .nav__links--toggle {

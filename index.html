@@ -9,8 +9,15 @@
   </head>
   <body>
     <header>
-      <nav class=" ">
+      <nav>
         <div class="container nav__center">
+          <span class="nav__hamburger nav__hamburger--toggle" id="nav__toggle">
+            <img
+              class="nav__hamburger__icon"
+              src="./assets/icons/menu.png"
+              alt=""
+            />
+          </span>
           <div class="nav__logo">
             <a href="#hero">
               <img
@@ -21,14 +28,7 @@
             </a>
           </div>
 
-          <div class="nav__hamburger nav__hamburger--toggle">
-            <img
-              class="nav__hamburger__icon"
-              src="./assets/icons/menu.png"
-              alt=""
-            />
-          </div>
-          <ul class="nav__links nav__links--toggle">
+          <ul class="nav__links" id="nav__list">
             <li class="nav__item"><a href="#about">About</a></li>
             <li class="nav__item"><a href="#projects">Projects</a></li>
             <li class="nav__item"><a href="#blog">Blog</a></li>
