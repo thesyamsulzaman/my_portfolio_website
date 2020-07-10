@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   items.forEach((item) =>
     item.addEventListener("click", function () {
-      //item.classList.remove("nav__item--active");
       //item.classList.add("nav__item--active");
+      //item.classList.remove("nav__item--active");
     })
   );
   window.addEventListener("scroll", function () {
