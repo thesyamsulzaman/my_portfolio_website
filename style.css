@@ -128,6 +128,7 @@ nav {
   overflow: hidden;
   height: 100vh;
   width: 100%;
+  transition: 1s ease-out;
 }
 .hero::before {
   background-image: url("./assets/img/4k-3840-x-2160-wallpapers-themefoxx (279).jpg");
@@ -155,6 +156,15 @@ nav {
   align-items: center;
   line-height: 35px;
   color: #fff;
+}
+
+.hero__title--faded {
+  opacity: 0.01;
+  transition: 0.2s ease-in;
+}
+.hero__text--faded {
+  opacity: 0.01;
+  transition: 0.2s ease-in;
 }
 
 /*============*/

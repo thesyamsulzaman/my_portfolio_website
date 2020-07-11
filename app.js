@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let navLists = document.getElementById("nav__list");
   let navToggleButton = document.getElementById("nav__toggle");
   let items = document.querySelectorAll("nav ul li");
+  let heroTitle = document.querySelector(".hero__title");
+  let heroText = document.querySelector(".hero__text");
 
   // EVENTS
   navToggleButton.addEventListener("click", function () {
@@ -23,6 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   );
   window.addEventListener("scroll", function () {
-    nav.className = docElem.scrollTop > 22 ? "nav--scroll" : "";
+    if (docElem.scrollTop > 22) {
+      nav.className = "nav--scroll";
+      heroText.classList.add("hero__title--faded");
+      heroTitle.classList.add("hero__text--faded");
+    } else {
+      nav.className = "";
+      heroText.classList.remove("hero__title--faded");
+      heroTitle.classList.remove("hero__text--faded");
+    }
   });
 });
