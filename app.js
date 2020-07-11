@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // VARIABLES
   const nav = document.querySelector("nav");
   let body = document.body,
     docElem = document.documentElement,
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let navToggleButton = document.getElementById("nav__toggle");
   let items = document.querySelectorAll("nav ul li");
 
+  // EVENTS
   navToggleButton.addEventListener("click", function () {
     navLists.classList.toggle("nav__links--toggle");
   });
